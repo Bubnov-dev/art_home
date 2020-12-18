@@ -1,0 +1,406 @@
+.hero{
+	background: url(../main/hero.svg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	color: white;
+	padding: 4% 11%;
+	font-size: 20px;
+}
+
+.hero h2{
+	color: white;
+	border: none;
+	text-align: left;
+}
+.hero button{
+	display: block;
+	color: white;
+	background: #E253B6;
+	border: none;
+	width: 120px;
+	margin-top: 30px;
+	padding: 5px 10px;
+}
+.features{
+	font-size: 20px;
+	text-align: center;
+	padding: 3% 11%;
+}
+h2{
+	width: fit-content;
+	width: -moz-fit-content;
+	text-align: center;
+	display: block;
+	border-bottom: 1px solid #E253B6;
+	margin: 1em auto;	
+	font-size: 40px;
+}
+.main-catalog .content img{
+	width: auto;
+	max-width: 85%;
+}
+.features .desc{
+	margin: 2% 0;
+}
+.features-show{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.feature img{
+	width: 30%;
+	height: 35%;
+	margin: 0 30%;
+}
+.feature:nth-child(1){
+	grid-column: 1/2;
+}
+.feature:nth-child(2){
+	grid-column: 2/3;
+}
+.feature:nth-child(3){
+	grid-column: 3/4;
+}
+.feature:nth-child(4){
+	grid-column: 4/5;
+}
+.feature:nth-child(5){
+	grid-column: 5/6;
+}
+
+.main-catalog{
+	background: #F3F3F9;
+	padding: 3% 11%;
+}
+.main-catalog .content{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main-catalog .content>div{
+	margin: 15px;
+	border-radius: 4px;
+}
+
+.main-catalog .content span{
+	display: block;
+	color: white;
+	width: 100%;
+	padding: 0 0 10px 20px;
+	margin-bottom: 0;
+}
+
+.main-catalog .content img{
+	margin: 10% auto 0;
+	display: block;
+	height: 60%;
+}
+.main-catalog .content .posters{
+	grid-column: 1/2;
+	background: #E253B6;
+}
+
+.main-catalog .content .module-pic{
+	grid-column: 2/3;
+	background: #63435A;
+}
+
+.main-catalog .content .tapestries{
+	grid-column: 3/4;
+	background: #343434;
+}
+
+.main-catalog .content .baguettes{
+	grid-column: 4/5;
+	background: #632551;
+}
+
+.main-catalog .content .c1:nth-child(5){
+	grid-column: 5/6;
+}
+
+.top{
+	padding: 3% 11%;
+}
+
+.top .desc{
+	padding: 3%;
+}
+.top .content{
+	display: grid;
+	grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+}
+.top .product{
+	width: 90%;
+
+}
+.top .product img{
+	width: 100%;
+}
+.top .product:nth-child(1){
+	grid-column: 1/2;
+}
+
+.top .product:nth-child(2){
+	grid-column: 2/3;
+}
+.top .product:nth-child(3){
+	grid-column: 3/4;
+}
+.top .product:nth-child(4){
+	grid-column: 4/5;
+}
+.top .product:nth-child(5){
+	grid-column: 5/6;
+}
+
+.top .p-top{
+	margin-left: -13%;
+	margin-top: 1%;
+	padding: .1% .3%;
+	background: #E253B6;
+	color: white;
+	position: absolute;
+	border-radius: 4px;
+}
+.top .price{
+	padding: 1% 0;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+.top .desc{
+	text-align: center;
+}
+.top .description{
+	font-size: .9em;
+	text-align: center;
+}
+.top .price::after{
+	content: " ₽";
+}
+.top .product>input{
+	display: none
+}
+
+.top .product>input:checked + label{
+	background: url(../main/top-liked.svg);
+}
+
+.top .product> label{
+	margin-top: -6%;
+	margin-left: 10.5%;
+	position: absolute;
+
+	display: block;
+	width: 36px;
+	height: 36px;
+	background-size: 100% 100% !important;
+	background: url(../main/top-like.svg);
+}
+
+.top form button{
+	background: #E253B6;
+	border: none;
+	padding: 5%;
+	border-radius: 4px;
+	color: white;
+	font-size: 0.7em;
+}
+.top form{
+	opacity: 0;
+	padding: 2% 0;
+}
+.top .product:hover form {
+	opacity: 1
+}
+.top form a{
+	color: #E253B6;
+	font-size: 0.7em;
+}
+
+.feedback{
+	background: #F3F3F9;
+	padding: 3% 15%;
+}
+
+.feedback .desc{
+	font-size: 1.5em;
+}
+.feedback>.content{
+	padding: 3% 0;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+.feedback .write{
+	margin: auto;
+	grid-column: 1/2;
+}
+.feedback .write button{
+	padding: 2% 3%;
+	margin-top: 4%;
+	border-radius: 4px;
+	color: #E253B6;
+	border: 3px solid #E253B6;
+	font-size: 1.2em;
+}
+
+.feedback .feed{
+	grid-column: 2/3;
+
+
+}
+
+.feedback .feed img{
+	margin:auto;
+	display: block;
+	grid-column: 1/2;
+	width: auto;
+}
+.feedback .feed .content{
+
+	display: grid;
+	grid-template-columns: 35% 65%;
+}
+.feedback .feed .person{
+	grid-column: 2/3;
+}
+.feedback .name{
+	font-size: 1.6em;
+}
+.about, .feedback{
+	font-size: 0.8em;
+}
+.about{
+	padding: 3% 15%;
+}
+.about h2{
+	margin-bottom: 10%;
+}
+
+.about .content{
+	padding: 3%;
+	width: 70%;
+	border: 1px solid #E253B6;
+	border-radius: 4px;
+	padding-right: 20%;
+}
+
+.about img{
+	width: 20%;
+	position: absolute;
+	margin-left: 55%;
+	margin-top: -5%;
+}
+
+.about .name{
+	font-size: 1.6em;
+}
+
+@media (max-width: 700px){
+	.hero{
+
+		background-size: auto 100%;
+	}
+
+	h2{
+		font-size: 1.5em;
+	}
+
+	.features-show{
+		display: block;
+	}
+	.feature img{
+		top: 0;
+		height: 50%;
+		grid-row: 1/2;
+		grid-column: 1/2;
+	}
+
+	.feature .desc{
+		grid-column: 2/3;
+		grid-column: 1/2;
+
+	}
+	.feature{
+		display: inline-grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		height: 100px;
+		width: 32%;
+		font-size: 0.6em;
+	}
+	.main-catalog .content{
+		display: block;
+	}
+	.main-catalog .content>div{
+		padding-top: 2%;
+	}
+	 .top{
+	}
+	.about{
+		margin: 5% 0;
+		padding: 0 2%;
+	}
+	.about img{
+		width: 70%;
+		margin: -5% 10% 0 ;
+	}
+	.about .content{
+		margin-top: 35%;
+		font-size: 1.3em;
+		width: auto;
+		padding:  20% 5% 5%;
+	}
+	.about .content .name{
+		font-size: 1.1em;
+		margin: 10% 0;
+	}
+
+	.about .content .post{
+		font-size: 0.9em;
+	}
+
+	.feedback .desc{
+		display: none;
+	}
+	.feedback>.content{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+	}
+	.feedback .feed{
+		grid-column: 1/2;
+		grid-row: 1/2;
+		display: block;
+	}
+	.feedback .feed>.content{
+		
+		display: grid;
+		grid-template-columns: 30% 70%;
+		grid-template-rows: auto;
+	}
+
+	.feedback .feed>.content img{
+		grid-column: 1/2;
+		grid-row: 1/2;
+		width: 100%;
+	}
+	.feedback .feed>.content .person{
+		padding-left: 5px;
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+	.feedback .feed>.content p{
+		grid-column: 1/3;
+		grid-row: 2/3
+	}
+
+	.feedback .write{
+		display: block;
+		grid-row: 2/3;
+		grid-column: 1/2;
+
+	}
+
+
+}

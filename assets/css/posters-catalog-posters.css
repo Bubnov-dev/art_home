@@ -1,0 +1,369 @@
+@media(max-width: 700px){
+
+	main>.content{
+		display: block !important;
+	}
+	.products>.desc{
+		display: none !important;
+	}
+
+	.product{
+		width: 47% !important;
+	}
+	.filter{
+		display: none !important;
+	}
+main{
+		padding: 0% 3% !important;
+	}
+	
+}	
+
+main>.content{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 1fr;
+	}
+	.filter{
+		display: block;
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+
+
+main{
+	padding: 3% 11%;
+}
+
+.products{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr;
+}
+
+.products h2{
+	grid-column: 1/2;
+	grid-row: 1/2
+}
+
+.products select{
+	margin: auto 0;
+	grid-column: 2/3;
+	grid-row: 1/2;
+	place-self: start end;
+	color: #707070;
+	padding: 1%;
+	-webkit-appearance: none;/* Chrome */
+    -moz-appearance: none;/* Firefox */
+    appearance: none;/* убираем дефолнтные стрелочки */
+
+	background: white;
+	border: 2px solid #E253B6;
+	border-radius: 4px;
+}
+select option:hover {
+    box-shadow: 0 0 10px 100px #1882A8 inset;
+}
+option:hover, option:focus, option:active{
+	background: #E253B6 !important;
+    color: #345667;
+    border: 100px solid #098765;
+
+}
+
+
+option{
+    outline-color: red;
+
+}
+ .products select:after {
+ 
+}
+.products .desc{
+	grid-column: 1/3;
+	grid-row: 2/3;
+}
+.products .products-content{
+	grid-column: 1/3;
+	grid-row: 3/4;
+	-webkit-flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.products .products-content .product{
+	width: 23%;
+	padding: 1%;
+}
+
+.products .products-content .product img{
+	width: 100%;
+}
+.price{
+	color: #343434;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+.price::after{
+	content: " ₽";
+}
+.hide{
+	display: none;
+}
+.hide:checked ~.hide-l{
+	transform: rotate(0deg);
+}
+.hide-l{
+	background: url(../posters-catalog-posters/up.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 15px;
+	height: 15px;
+	display: block;
+}
+.hide:checked ~div{
+	display: none;
+}
+
+.f-container{
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+}
+.f-container h3{
+	grid-row: 1/2;
+	grid-column: 1/2;
+}
+.f-container .hide-l{
+	transform: rotate(180deg);
+
+	margin-top: 20px;
+	grid-row: 1/2;
+	grid-column: 2/3;
+	place-self: start end;
+}
+
+.f-container>div{
+	grid-column: 1/3;
+	grid-row: 2/3;
+}
+
+.s-container .g-search{
+	border: 1px solid #343434;
+	border-radius: 4px;
+	color: #FFC0EF;
+	width: 90%;
+	padding: 7px;
+}
+.s-container ul{
+	height: 15em;
+	overflow-y: scroll;
+}
+.s-container .g-search:active, .s-container .g-search:focus{
+	color: #707070;
+}
+.num::before {
+	content: "(";
+}
+
+.num::after {
+	content: ")";
+}
+
+/*---------------------------------------*/
+/* для элемента input c type="checkbox" */
+    .custom-checkbox {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    /* для элемента label, связанного с .custom-checkbox */
+    .custom-checkbox+label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+    }
+
+    /* создание в label псевдоэлемента before со следующими стилями */
+    .custom-checkbox+label::before {
+      content: '';
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid #adb5bd;
+      border-radius: 0.25em;
+      margin-right: 0.5em;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+    }
+
+    /* стили при наведении курсора на checkbox */
+    .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+      border-color: #F364C8;
+    }
+
+    /* стили для активного чекбокса (при нажатии на него) */
+    .custom-checkbox:not(:disabled):active+label::before {
+      background-color: #E253B6;
+      border-color: #F364C8;
+    }
+
+
+    /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+    .custom-checkbox:focus:not(:checked)+label::before {
+      border-color: #F364C8;
+    }
+
+    /* стили для чекбокса, находящегося в состоянии checked */
+    .custom-checkbox:checked+label::before {
+      border-color: #F364C8;
+      background-color: #E253B6;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    }
+
+    /* стили для чекбокса, находящегося в состоянии disabled */
+    .custom-checkbox:disabled+label::before {
+      background-color: #e9ecef;
+    }
+
+    .checkbox {
+      margin-bottom: 1em;
+    }
+
+    .color-container img{
+    	width: 15%;
+    }
+
+    .p-container, .size-container{
+    	display: grid;
+    	grid-template-columns: 3fr 1fr 3fr;
+    	grid-template-rows: auto;
+    }
+
+    .start-p{
+    	grid-column: 1/2;
+    	grid-row: 1/2;
+    }
+	.end-p{
+		grid-column: 3/4;
+		grid-row: 1/2
+	}
+	input.start{
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+
+	input.end{
+		grid-column: 3/4;
+		grid-row: 2/3;
+	}
+
+	input.end, input.start{
+		border: 1px solid #d6d6d6;
+		border-radius: 4px;
+		width: 100%;
+		margin-top: 6%;
+		padding: 3% 1%;
+	}
+
+	.x{
+		grid-column: 2/3;
+		grid-row: 2/3;
+		margin: auto;
+		padding-left: 2px;
+	}
+
+	.slider-choice{
+		margin-top: 5%;
+		grid-column: 1/4;
+		grid-row: 3/4;
+	}
+	.article{
+		font-size: 0.7em;
+	}
+
+	.more-products{
+		grid-column: 1/3;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+
+	.more20{
+		width: fit-content;
+		margin: 3% auto;
+
+		grid-column: 1/2;
+		grid-row: 1/2;
+
+		color: #707070;
+		padding: 1%;
+		background: white;
+		border: 2px solid #E253B6;
+		color: #E253B6;
+		border-radius: 4px;
+		font-size: 1.1em;
+	}
+	.pages{
+		grid-row: 2/3;
+		grid-column: 1/2;
+
+		display: flex;
+		flex-direction: row;
+		width: fit-content;
+		margin: 0 auto;
+	}
+
+
+	.pages >*{
+		padding: 1%;
+		background: white;
+		max-width: 46px;
+		width: 10vw;
+		max-height: 46px;
+		height: 10vw;
+	}
+
+	.wrap>*{
+		background: white;
+		color: #E253B6;
+		border-radius: 4px;
+
+		border:none;
+		width: 100%;
+		height: 100%;
+
+	}
+	.pages label{
+		display: block;
+	}
+	.pages label>span{
+		display: block;	
+		margin: auto;
+		text-align: center;
+		padding-top: 20%;
+
+	}
+	.num-page{
+		display: none;
+	}
+	.left, .right{
+		color: #707070;
+		font-weight: 700;
+	}
+	.pages label:hover, .more-products .left:hover, .more-products .right:hover, .num-page:checked ~label, .dot-page:hover{
+		background: #E253B6;
+		color:white;
+	}
+	.more-products{
+		grid-row: 4/5;
+	}

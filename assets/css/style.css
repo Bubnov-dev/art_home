@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html{
+	font-family: Roboto;
+	color: #707070;
+}
+
+li{
+	list-style: none;
+}
+ul{
+	padding: 0;
+}
+
+.breadcrumbs{
+	font-size: 0.8em;
+	opacity: 0.4;
+}
+.breadcrumbs span.first{
+	color: #E253B6;
+
+}
+img{
+	width: 100%;
+}
+
+h2, h3{
+	color: #343434;
+}
+@media(max-height: 700px){
+	main{
+		padding: 0 !important;
+	}
+}
