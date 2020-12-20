@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/profile.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -72,33 +73,36 @@
 	<div class="password-change">
 		
 		<form action="">
-		<div class="f-wrap">
-		  <div class="field">
-			    <input type="password" name="old-password" id="old-password" placeholder="">
-		    	<label for="old-password">Старый пароль</label>
-			</div>
-			<input type="checkbox" id="togglePassword1">
-	    	<label for="togglePassword1"></label>
-	    </div>
-		<div class="f-wrap">
+			<div class="f-wrap">
+			  <div class="field">
+				    <input class="password" type="password" name="old-password" id="old-password" placeholder="">
+			    	<label for="old-password">Старый пароль</label>
+				</div>
+				<input type="checkbox" id="togglePassword1">
+		    	<label for="togglePassword1"></label>
+		    </div>
 
-			 <div class="field">
-			    <input class="password" type="password" name="new-password" id="new-password" placeholder="">
-		    	<label  for="new-password">Новый пароль</label>
-			</div>
+		   
+			<div class="f-wrap">
 
-	    	<input type="checkbox" id="togglePassword2">
-	    	<label for="togglePassword2"></label>
-    	</div>
-		<div class="f-wrap">
+				 <div class="field">
+				    <input class="password" type="password" name="new-password" id="new-password" placeholder="">
+			    	<label  for="new-password">Новый пароль</label>
+				</div>
 
-			 <div class="field">
-			    <input type="password" name="repeat-password" id="repeat-password" placeholder="">
-		    	<label for="repeat-password">Повторите пароль</label>
+		    	<input type="checkbox" id="togglePassword2">
+		    	<label for="togglePassword2"></label>
+	    	</div>
+
+			<div class="f-wrap">
+
+				 <div class="field">
+				    <input class="password" type="password" name="same-password" id="same-password" placeholder="">
+			    	<label for="same-password">Повторите пароль</label>
+				</div>
+				<input type="checkbox" id="togglePassword3">
+		    	<label for="togglePassword3"></label>
 			</div>
-			<input type="checkbox" id="togglePassword3">
-	    	<label for="togglePassword3"></label>
-		</div>
 		    <button>Сохранить изменения</button>
 		</form>
 
