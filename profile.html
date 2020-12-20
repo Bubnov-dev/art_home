@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/profile.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+</head>
+<body>
+<main>
+	<div class="breadcrumbs">
+		<span class="first">Главная / </span>
+		<span class="last">Каталог</span>
+	</div>
+	
+	<div class="p-menu">
+		<h3>Панк Александр</h3>
+		<span class="active"><a href="">Личная информация</a></span>
+		<span><a href="">Мои заказы</a></span>
+		<span><a href="">Избранное</a></span>
+		<span><a href="">Специальные предложения</a></span>
+		<span><a href="">Выйти</a></span>
+	</div>
+
+	<div class="personal-info">
+		<form action="">
+			  <div class="field">
+				    <input type="text" name="fio" id="fio" placeholder="">
+			    	<label for="fio">ФИО</label>
+				</div>
+
+			  <div class="field">
+				
+			    	<input type="tel" name="tel" id="tel" placeholder="">
+			    	<label for="tel">Телефон</label>
+			    </div>
+
+			  <div class="field">
+			    
+			    	<input type="email" name="email" id="email" placeholder="">
+			    	<label for="email">E-mail</label>
+			    </div>
+
+			    <button>Сохранить изменения</button>
+			</form>
+	</div>
+	<div class="other-info">
+
+		<form action="">
+		  <div class="field">
+			    <input type="text" name="gender" id="gender" placeholder="">
+		    	<label for="gender">Пол</label>
+			</div>
+
+		  <div class="field">
+			
+		    	<input type="date" name="birth" id="birth" placeholder="">
+		    	<label for="birth">День рождения</label>
+		    </div>
+
+		  <div class="field">
+		    
+		    	<input type="text" name="city" id="city" placeholder="">
+		    	<label for="city">Город</label>
+		    </div>
+
+		    <button>Сохранить изменения</button>
+		</form>
+	</div>
+	<div class="password-change">
+		
+		<form action="">
+		<div class="f-wrap">
+		  <div class="field">
+			    <input type="password" name="old-password" id="old-password" placeholder="">
+		    	<label for="old-password">Старый пароль</label>
+			</div>
+			<input type="checkbox" id="togglePassword1">
+	    	<label for="togglePassword1"></label>
+	    </div>
+		<div class="f-wrap">
+
+			 <div class="field">
+			    <input class="password" type="password" name="new-password" id="new-password" placeholder="">
+		    	<label  for="new-password">Новый пароль</label>
+			</div>
+
+	    	<input type="checkbox" id="togglePassword2">
+	    	<label for="togglePassword2"></label>
+    	</div>
+		<div class="f-wrap">
+
+			 <div class="field">
+			    <input type="password" name="repeat-password" id="repeat-password" placeholder="">
+		    	<label for="repeat-password">Повторите пароль</label>
+			</div>
+			<input type="checkbox" id="togglePassword3">
+	    	<label for="togglePassword3"></label>
+		</div>
+		    <button>Сохранить изменения</button>
+		</form>
+
+	</div>
+</main>
+<script type="text/javascript" src="assets/js/show-password.js"></script>
+</body>
+</html>

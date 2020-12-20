@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/posters-order.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+</head>
+<body>
+<main>
+	<div class="breadcrumbs">
+		<span class="first">Главная / </span>
+		<span class="last">Каталог</span>
+	</div>
+
+	<div class="form">
+		<div class="customer">
+			<h2>Получатель</h2>
+			  <form action="">
+			  <div class="field">
+				    <input type="text" name="name" id="name" placeholder="">
+			    	<label for="name">Фамилия</label>
+				</div>
+
+			  <div class="field">
+				
+			    	<input type="text" name="surname" id="surname" placeholder="">
+			    	<label for="surname">Фамилия</label>
+				</div>
+
+			  <div class="field">
+				
+			    	<input type="tel" name="tel" id="tel" placeholder="">
+			    	<label for="tel">Телефон</label>
+			    </div>
+
+			  <div class="field">
+			    
+			    	<input type="email" name="email" id="email" placeholder="">
+			    	<label for="email">E-mail</label>
+			    </div>
+			</form>
+		</div>
+
+		<div class="pay-methods">
+			<h2>Способ оплаты</h2>
+			<input type="radio" name="pay" id="p1">
+			<label for="p1">Оплата при получении</label>
+
+			<input type="radio" name="pay" id="p2">
+			<label for="p2">Яндекс.Касса (банковские карты, Яндекс.Деньги, QIWI-кошелек)<span class="dedesc"> - Оплата картой любого банка без комиссии.</span></label>
+
+			<input type="radio" name="pay" id="p3">
+			<label for="p3">Сбербанк<span class="dedesc"> - Оплата картой любого банка без комиссии</span></label>
+		</div>
+
+		<div class="delivery-addres">
+			<h2>Адрес доставки</h2>
+		    <form  action="">
+			    	<div class="m-place">
+				    <div class="field">
+					    <input type="text" name="country" id="country" placeholder="">
+					    <label for="name">Страна</label>
+					</div>
+				    <div class="field">
+
+					    <input type="text" name="city" id="city" placeholder="">
+					    <label for="city">Город</label>
+					</div>
+				</div>
+			</form>
+  			<input type="radio" name="delivery-method" id="dm1">
+			<label for="dm1">Моего города нет в списке</label>
+
+			<input type="radio" name="delivery-method" id="dm2">
+			<label for="dm2">Самовывоз из офиса <span class="dedesc">- 1-2 дня Бесплатно г. Санкт-Петербург, Лиговский пр., 262 Пн-пт 10:00 - 19:00 Сб-Вс</span></label>
+			
+			<input type="radio" name="delivery-method" id="dm3">
+			<label for="dm3">Курьер «СДЭК» доставка до двери<span class="dedesc"> - 10-12 дней, 540 ₽ Отправка заказов осуществляется с понедельника по пятницу</span></label>
+			
+			<input type="radio" name="delivery-method" id="dm4">
+			<label for="dm4">Пункт выдачи «СДЭК»<span class="dedesc"> - 10-12 дней Бесплатно Отправка заказов осуществляется с понедельника по пятницу</span></label>
+			
+			<input type="radio" name="delivery-method" id="dm5">
+			<label for="dm5"> Почта России <span class="dedesc">- от 7 до 9 раб. дней Бесплатно Отправка заказов осуществляется с понедельника по пятницу </span></label>
+		  		
+
+
+
+			<div class="no-such-city">
+				<form action="">
+					<div class="field">
+					    <input type="text" name="another-city" id="another-city" placeholder="">
+					    <label for="another-city">Другой город</label>
+					</div>
+
+					<div class="field">
+					    <input type="text" name="street" id="street" placeholder="">
+					    <label for="street">Улица</label>
+					</div>
+
+					<div class="field">
+						<input type="text" name="house" id="house" placeholder="">
+					    <label for="house">Дом</label>
+					</div>
+
+					<div class="field">
+					    <input type="text" name="flat" id="flat" placeholder="">
+					    <label for="flat">Квартира</label>
+					</div>
+				</form>
+			</div>
+
+
+				<form action="">
+				  <div class="field">
+				    <textarea type="text" name="comment" id="comment" placeholder="Комментарий к заказу"></textarea>
+				  </div>
+				 </form>			  
+		</div>
+
+		
+	</div>
+		<div class="order">
+			<h2>Ваш заказ</h2>
+			<button>Редактировать</button>
+			<div class="gallery"></div>
+			<div class="rules">
+				<span class="left delivery-p">Доставка:</span>
+				<span class="left no-sale">Сумма без скидки:</span>
+				<span class="left your-sale">Ваша скидка составили:</span>
+				<h3 class="left so">Сумма составила:</h3>
+
+				<span class="price price-delivery">123</span>
+				<span class="price price-no-sale">32</span>
+				<span class="price price-your-sale">43</span>
+				<span class="price price-so">321</span>
+			</div>
+		</div>
+
+		<button class="go">Оформить заказ</button>
+		<div class="agreement">Нажимая кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a></div>
+	
+</main>
+</body>
+</html>
