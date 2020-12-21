@@ -3,6 +3,7 @@
 <head>
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="assets/css/posters-order.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
@@ -82,6 +83,7 @@
 			
 			<input type="radio" name="delivery-method" id="dm4">
 			<label for="dm4">Пункт выдачи «СДЭК»<span class="dedesc"> - 10-12 дней Бесплатно Отправка заказов осуществляется с понедельника по пятницу</span></label>
+			<span id="show-m-m">Выбрать пункт выдачи</span>
 			
 			<input type="radio" name="delivery-method" id="dm5">
 			<label for="dm5"> Почта России <span class="dedesc">- от 7 до 9 раб. дней Бесплатно Отправка заказов осуществляется с понедельника по пятницу </span></label>
@@ -142,7 +144,25 @@
 
 		<button class="go">Оформить заказ</button>
 		<div class="agreement">Нажимая кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a></div>
-	
+	<div class="modal" id="m-map">
+		<div class="wall">
+		</div>
+		<div class="m-content">
+			<h2>Выберите пункт выдачи</h2>
+			<button class="">X</button>
+			<form action="">
+				<div class="field">
+				    <input type="text" name="y-city" id="y-city" placeholder="">
+				    <label for="y-city">Выберите Ваш город</label>
+				    
+				</div>
+				<div class="map">
+				    	<img src="assets/posters-order/map.svg">
+				    </div>
+			</form>
+		</div>
+	</div>
 </main>
+<script type="text/javascript" src="assets/js/order-modal.js"></script>
 </body>
 </html>
