@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/posters-catalog-posters.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -15,29 +16,29 @@
 		<span class="last">Каталог</span>
 	</div>
 	<div class="content">
-		<div class="filter">
+		<div class="filter" id="filter">
 			<div class="f-container">
-				<h3>Тема</h3>
+				<h3><button class="f-container-button" onclick="hide_filter()">X</button>Тема</h3>
 				<input type="checkbox" name="" class="hide" id="h0"><label class="hide-l" for="h0"></label>
 				<div class="s-container">
 					<input type="text" name="" class="g-search" placeholder="Артикул; ключевое слово">
 					<ul>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-0"><label for="category-0"><div>что-то невероятно длинное<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-1"><label for="category-1"><div>арт<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-2"><label for="category-2"><div>арт<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-3"><label for="category-3"><div>арт<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-4"><label for="category-4"><div>арт<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-5"><label for="category-5"><div>арт<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-6"><label for="category-6"><div>арт<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-7"><label for="category-7"><div>арт<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-8"><label for="category-8"><div>арт<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-9"><label for="category-9"><div>арт<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-10"><label for="category-10"><div>арт<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-11"><label for="category-11"><div>арт<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-12"><label for="category-12"><div>арт<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-13"><label for="category-13"><div>арт<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-14"><label for="category-14"><div>арт<span class="num">5</span></div></label></li>
-						<li><input class="custom-checkbox"type="checkbox" name="" id="category-15"><label for="category-15"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-0"><label for="category-0"><div>что-то невероятно длинное<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-1"><label for="category-1"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-2"><label for="category-2"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-3"><label for="category-3"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-4"><label for="category-4"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-5"><label for="category-5"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-6"><label for="category-6"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-7"><label for="category-7"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-8"><label for="category-8"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-9"><label for="category-9"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-10"><label for="category-10"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-11"><label for="category-11"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-12"><label for="category-12"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-13"><label for="category-13"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-14"><label for="category-14"><div>арт<span class="num">5</span></div></label></li>
+						<li><input class="custom-checkbox" type="checkbox" name="" id="category-15"><label for="category-15"><div>арт<span class="num">5</span></div></label></li>
 					</ul>
 				</div>
 			</div>
@@ -90,7 +91,6 @@
 				</div>
 			</div>
 			<div class="f-container">
-
 				<h3>Ориентация</h3>
 				<input type="checkbox" name="" class="hide" id="h4"><label class="hide-l" for="h4"></label>
 				<div class="o-container">
@@ -104,8 +104,8 @@
 		</div>
 
 		<div class="products">
-			<h2>Постеры</h2>
-			<select>
+			<h2>Постеры<button class="products-button" onclick="show_filters()">Показать фильтры</button></h2>
+			<select id="select_filter">
 				<option>По популярности</option>
 				<option>По новизне</option>
 				<option>По убыванию цены</option>
@@ -204,5 +204,6 @@
 
 	</div>
 </main>
+<script src="assets/js/posters-catalog-posters.js"></script>
 </body>
 </html>

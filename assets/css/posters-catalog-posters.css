@@ -7,17 +7,57 @@
 		display: none !important;
 	}
 
+	.products-button {
+		margin: 1rem 0;
+		display: block !important;
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid palevioletred;
+		outline: none;
+	}
+	.f-container-button {
+		display: inline !important;
+		background: transparent;
+		border: none;
+		outline: none;
+	}
 	.product{
 		width: 47% !important;
 	}
 	.filter{
 		display: none !important;
 	}
+	.filter-abs{
+		width: 100vw;
+		display: block !important;
+		position: absolute;
+		background-color: white;
+		animation-name: show;
+		animation-duration: .5s;
+	}
+
+	@keyframes show {
+		from{
+			opacity: 0;
+		}
+		to{
+			opacity: 1;
+		}
+	}
+
 main{
 		padding: 0% 3% !important;
 	}
 	
-}	
+}
+
+.f-container-button {
+	display: none;
+}
+
+.products-button {
+	display: none;
+}
 
 main>.content{
 	display: grid;
@@ -49,7 +89,12 @@ main{
 	grid-row: 1/2
 }
 
+.pink-option {
+	background-color: #E253B6;
+}
+
 .products select{
+	outline: none;
 	margin: auto 0;
 	grid-column: 2/3;
 	grid-row: 1/2;
@@ -160,9 +205,27 @@ option{
 	width: 90%;
 	padding: 7px;
 }
+.s-container ul input{
+	display: none;
+}
 .s-container ul{
 	height: 15em;
 	overflow-y: scroll;
+		scrollbar-color: #eee rgba(0,0,0,0);     /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width: thin;
+}
+
+.s-container ul::-webkit-scrollbar {
+    width: 8px; /* ширина для вертикального скролла */
+    height: 24px; /* высота для горизонтального скролла */
+    background-color: #f0f0f0;
+}
+
+/* ползунок скроллбара */
+.s-container ul::-webkit-scrollbar-thumb {
+    background-color: #707070;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px rgba(0,0,0,0);
 }
 .s-container .g-search:active, .s-container .g-search:focus{
 	color: #707070;
@@ -174,6 +237,8 @@ option{
 .num::after {
 	content: ")";
 }
+
+.
 
 /*---------------------------------------*/
 /* для элемента input c type="checkbox" */

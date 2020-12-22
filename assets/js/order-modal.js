@@ -9,3 +9,4 @@ const funHide = () => {
   someElem.classList.remove("vis") //класс скрывающий модалку (css)
 }
 document.getElementById("show-m-m").addEventListener("click", funShow);
+document.getElementById("close-m-m").addEventListener("click", funHide);

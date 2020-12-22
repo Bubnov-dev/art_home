@@ -1,386 +1,697 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-	<title></title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/footer.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main-mobile.css">
 </head>
 <body>
-	<header>
-			<div class="PC-header">
-			<div class="up"> <!--sorry, up is gray-->
-				<div class="logo">
-					<img src="assets/logo.svg">
-				</div>
+<header>
+  <div class="PC-header">
+    <div class="up"> <!--sorry, up is gray-->
+      <div class="logo">
+        <img src="assets/logo.svg" alt="logo">
+      </div> <!--.logo-->
 
-				<div class="main-head">
-					<nav class="menu">
-						<ul>
-							<li><a href="">О нас</a></li>
-							<li><a href="">Продукция и услуги</a></li>
-							<li><a href="">Доставка и оплата</a></li>
-							<li><a href="">Как заказать</a></li>
-							<li><a href="">Контакты</a></li>
-						</ul>
-					</nav>
-					<div class="contacts-left">
-						<ul>
-							<li class="tel"><a href="tel:+7 (921) 574-37-35 ">+7 (921) 574-37-35</a></li>
-							<li class="callback"><a href=""><img src="assets/header/repeat.svg">Заказать обратный звнок</a></li>
-							<li class="work"><span>Мы работаем ПН-ПТ с 10-18 </span></li>
-						</ul>
-					</div>
-					
-				</div>
-				<div class="contacts-right">
-						<ul>
-							<li class="viber"><a><img src="assets/header/viber.svg"></a></li>
-							<li class="whatsapp"><a><img src="assets/header/whatsapp.svg"></a> </li>						
-							<li class="telegram"><a><img src="assets/header/telegram.svg"></a> </li>
-						</ul>			
-					</div>
-				<div class="search">
-					<span class="catalog"><img src="assets/header/catalog.svg"><span>Каталог</span></span>
-					<form>
-						<span class="search-wrap">
-							<span class="loupe"></span>
-							<input type="text" name="" placeholder="Поиск">
-						</span>
-						<div class="upload"><input class="inputfile" type="file" name=""><img src="assets/header/upload.svg">Загрузить мое изображение</div>
-					</form>
-				</div>
-
-				<div class="small-menu">
-					<ul>
-						<li class="likes"><a><img src="assets/header/like.svg"></a></li>
-						<li class="profile"><a><img src="assets/header/profile.svg"></a></li>
-						<li class="shop"><a><img src="assets/header/shop.svg"></a></li>
-					</ul>
-				</div>
-
-
-			</div>
-			<nav class="products">
-					<div class="product" id="p-posters"><a><img src="assets/header/posters.svg">Постеры</a>
-						<div class="sub-menu">
-						<div class="col c1">
-							<h3>заголовок</h3>
-							<div class="list">
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-							</div>
-
-						</div>
-						<div class="col c2">
-							<h3>заголовок</h3>
-							<div class="list">
-								<span class="categ"><a href="">картина</a></span>
-								<span class="categ"><a href="">картина</a></span>
-							</div>	
-
-						</div>
-					</div></div>
-					<div  class="product"id="p-module-pictures"><a><img src="assets/header/module-pic.svg">Модульные картины</a><div class="sub-menu"></div></div>
-					<div class="product" id="p-tapestries"><a><img src="assets/header/tapestries.svg">Гобелены</a><div class="sub-menu"></div></div>
-					<div class="product" id="p-baguettes"><a><img src="assets/header/baguettes.svg">Багеты</a><div class="sub-menu"></div></div>
-					<div class="product" id="p-sales"><a><img src="assets/header/sales.svg">Акция</a><div class="sub-menu"></div></div>
-			</nav>
-		</div>
-		<div class="mobile-header">
-			<div class="main-head">
-				<div class="menu"><img src="assets/header/mobile/menu.svg"></div>
-				<div class="logo"><img src="assets/logo.svg"></div>
-				<div class="search"><img src="assets/header/mobile/search.svg"></div>
-				<div class="like"><img src="assets/header/mobile/like.svg"></div>
-				<div class="shop"><img src="assets/header/mobile/shop.svg"></div>
-			</div>
-		</div>
-	</header>
+      <div class="main-head">
+        <nav class="menu">
+          <ul>
+            <li><a href="">О нас</a></li>
+            <li><a href="">Продукция и услуги</a></li>
+            <li><a href="">Доставка и оплата</a></li>
+            <li><a href="">Как заказать</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav> <!--.menu-->
+        <div class="contacts-left">
+          <ul>
+            <li class="tel"><a href="tel:+7 (921) 574-37-35 ">+7 (921) 574-37-35</a></li>
+            <li class="callback"><a href=""><img src="assets/header/repeat.svg" alt="repeat">Заказать обратный звнок</a>
+            </li>
+            <li class="work"><span>Мы работаем ПН-ПТ с 10-18 </span></li>
+          </ul>
+        </div> <!--.contacts-left-->
+      </div> <!--.main-head-->
+      <div class="contacts-right">
+        <ul>
+          <li class="viber"><a><img src="assets/header/viber.svg" alt="viber"></a></li>
+          <li class="whatsapp"><a><img src="assets/header/whatsapp.svg" alt="WhatsApp"></a></li>
+          <li class="telegram"><a><img src="assets/header/telegram.svg" alt="telegram"></a></li>
+        </ul>
+      </div> <!--.contacts-right-->
+      <div class="search">
+        <span class="catalog"><img src="assets/header/catalog.svg" alt="catalog"><span>Каталог</span></span>
+        <form>
+            <span class="search-wrap">
+              <span class="loupe"></span>
+              <label>
+                <input type="text" name="" placeholder="Поиск">
+              </label>
+            </span>
+          <div class="upload"><input class="inputfile" type="file" name=""><img src="assets/header/upload.svg"
+                                                                                alt="upload">Загрузить
+            мое изображение
+          </div>
+        </form>
+      </div> <!--.search-->
+      <div class="small-menu">
+        <ul>
+          <li class="likes"><a><img src="assets/header/like.svg" alt="like"></a></li>
+          <li class="profile"><a><img src="assets/header/profile.svg" alt="profile"></a></li>
+          <li class="shop"><a><img src="assets/header/shop.svg" alt="shop"></a></li>
+        </ul>
+      </div> <!--.small-menu-->
 
 
+    </div> <!--.up-->
+    <nav class="products">
+      <div class="product" id="p-posters"><a><img src="assets/header/posters.svg" alt="posters">Постеры</a>
+        <div class="sub-menu">
+          <div class="col c1">
+            <h3>заголовок</h3>
+            <div class="list">
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+            </div>
+          </div>
+          <div class="col c2">
+            <h3>заголовок</h3>
+            <div class="list">
+              <span class="categ"><a href="">картина</a></span>
+              <span class="categ"><a href="">картина</a></span>
+            </div>
+          </div>
+        </div>
+      </div> <!--.product-->
+      <div class="product" id="p-module-pictures"><a><img src="assets/header/module-pic.svg" alt="module-pic">Модульные
+        картины</a>
+        <div class="sub-menu"></div>
+      </div> <!--.product-->
+      <div class="product" id="p-tapestries"><a><img src="assets/header/tapestries.svg" alt="tapestries">Гобелены</a>
+        <div class="sub-menu"></div>
+      </div> <!--.product-->
+      <div class="product" id="p-baguettes"><a><img src="assets/header/baguettes.svg" alt="baguettes">Багеты</a>
+        <div class="sub-menu"></div>
+      </div> <!--.product-->
+      <div class="product" id="p-sales"><a><img src="assets/header/sales.svg" alt="sales">Акция</a>
+        <div class="sub-menu"></div>
+      </div> <!--.product-->
+    </nav> <!--.products-->
+  </div> <!--.PC-header-->
+  <div class="mobile-header">
+    <div class="mobile-header-grid">
+      <div class="mobile-header-burger-menu grid-item">
+        <div class="mobile-header-burger-menu-item">
+          <button class="menu" aria-label="Main Menu" id="menu-button">
+            <svg width="50" height="50" viewBox="0 0 100 100">
+              <path class="line line1"
+                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+              />
+              <path class="line line2" d="M 20,50 H 80"
+              />
+              <path class="line line3"
+                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-header-logo grid-item">
+        <a>
+          <div><img src="assets/header/mobile/logo.svg" alt="logo"></div>
+        </a>
+      </div>
+      <div class="mobile-header-search grid-item">
+        <a>
+          <div><img src="assets/header/mobile/search.svg" id="search" alt="search"></div>
+        </a>
+      </div>
+      <div class="mobile-header-profile grid-item">
+        <a>
+          <div><img src="assets/header/mobile/profile.svg" alt="profile"></div>
+        </a>
+      </div>
+      <div class="mobile-header-like grid-item">
+        <a>
+          <div><img src="assets/header/mobile/like.svg" alt="like"></div>
+        </a>
+      </div>
+      <div class="mobile-header-basket grid-item">
+        <a>
+          <div><img src="assets/header/mobile/basket.svg" alt="basket"></div>
+        </a>
+      </div>
+      <div class="search-mobile grid-item">
+        <input type="text" name="search-m" id="search-m" placeholder="Поиск...">
+        <img class="back" id="back" src="assets/main/back-arrow.svg">
+        <img class="close" id="close" src="assets/main/close.svg">
+      </div>
+    </div>
+
+  </div> <!--.mobile-header-->
+  <div id="root"></div>
+  <script src="assets/js/mobile-header.js"></script>
+</header>
 
 
-	<main>
-		<div class="hero">
-			<h2>Искусство в Вашем доме</h2>
-			<div class="desc">Все тренды мировых интерьеров на Арт Home</div>
-			<button class="more">Подробнее</button>
-			
-		</div>
+<main>
+  <div class="hero">
+    <h2>Искусство в Вашем доме</h2>
+    <div class="desc">Все тренды мировых интерьеров на Арт Home</div>
+    <button class="more">Подробнее</button>
+
+  </div> <!--.hero-->
+
+  <div class="features">
+    <h2>Делаем дома уютнее, а людей счастливее</h2>
+    <div class="desc">Ну, и немного о наших преимуществах, с заботой о Вас...</div>
+    <div class="features-show">
+      <div class="feature">
+        <img src="assets/main/f-0.svg" alt="frame">
+        <span class="desc">Оформление <br>в раму онлайн</span>
+      </div> <!--.feature-->
+      <div class="feature">
+        <img src="assets/main/f-1.svg" alt="hands">
+        <span class="desc">Индивидуальный<br>подход к клиенту</span>
+      </div> <!--.feature-->
+      <div class="feature">
+        <img src="assets/main/f-2.svg" alt="rocket">
+        <span class="desc">Изготовление<br>1-3 дня</span>
+      </div>  <!--.feature-->
+      <div class="feature">
+        <img src="assets/main/f-3.svg" alt="box">
+        <span class="desc">Доставка по<br>всей России</span>
+      </div> <!--.feature-->
+      <div class="feature">
+        <img src="assets/main/f-4.svg" alt="picture">
+        <span class="desc">Более 20 000<br>изображений</span>
+      </div> <!--.feature-->
+    </div> <!--.features-show-->
+    <div class="features-show mobile-features-show">
+      <div class="swiper-container feature-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="feature">
+              <img src="assets/main/f-0.svg" alt="frame">
+              <span class="desc">Оформление <br>в раму онлайн</span>
+            </div> <!--.feature-->
+            <div class="feature">
+              <img src="assets/main/f-1.svg" alt="hands">
+              <span class="desc">Индивидуальный<br>подход к клиенту</span>
+            </div> <!--.feature-->
+            <div class="feature">
+              <img src="assets/main/f-2.svg" alt="rocket">
+              <span class="desc">Изготовление<br>1-3 дня</span>
+            </div> <!--.feature-->
+          </div>
+          <div class="swiper-slide">
+            <div class="feature">
+              <img src="assets/main/f-3.svg" alt="box">
+              <span class="desc">Доставка по<br>всей России</span>
+            </div> <!--.feature-->
+            <div class="feature">
+              <img src="assets/main/f-4.svg" alt="picture">
+              <span class="desc">Более 20 000<br>изображений</span>
+            </div> <!--.feature-->
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div> <!--.swiper-container.feature-slider-->
+
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        let swiper_feat = new Swiper('.swiper-container', {
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '">' + '</span>';
+            },
+          },
+        });
+      </script>
+    </div> <!--.mobile-features-show-->
+  </div> <!--.features-->
+
+  <div class="main-catalog">
+    <h2>Каталог</h2>
+    <div class="content">
+      <div class="posters">
+        <img src="assets/main/c-0.svg" alt="posters">
+        <span class="desc">Постеры</span>
+      </div>
+      <div class="module-pic">
+        <img src="assets/main/c-1.svg" alt="module-picture">
+        <span class="desc">Модульные картины</span>
+      </div>
+      <div class="tapestries">
+        <img src="assets/main/c-2.svg" alt="tapestry">
+        <span class="desc">Гобелены</span>
+      </div>
+      <div class="baguettes">
+        <img src="assets/main/c-3.svg" alt="baguettes">
+        <span class="desc">Багеты</span>
+      </div>
+
+    </div>
+  </div> <!--.main-catalog-->
+
+  <div class="top">
+    <h2>ТОП продаж</h2>
+    <div class="desc">Популярные коллекции товаров за последнее время</div>
+
+    <div class="content content-pc">
+      <div class="product">
+        <img src="assets/main/p-0.svg" alt="car">
+        <span class="p-top">Топ</span>
+        <div class="price">5000</div>
+        <input type="checkbox" name="" id="ch0">
+        <label for="ch0"></label>
+
+        <div class="description">Модульная картина. Желтая любовь</div>
+        <form>
+          <button>В корзину</button>
+          <a href="">Купить в один клик</a>
+        </form>
+      </div>
+
+      <div class="product">
+        <img src="assets/main/p-1.svg" alt="some-text">
+        <span class="p-top">Топ</span>
+        <div class="price">5000</div>
+        <input type="checkbox" name="" id="ch1">
+        <label for="ch1"></label>
+
+        <div class="description">Постер. Правила девочки</div>
+        <form>
+          <button>В корзину</button>
+          <a href="">Купить в один клик</a>
+        </form>
+      </div>
+
+      <div class="product">
+        <img src="assets/main/p-2.svg" alt="product">
+        <span class="p-top">Топ</span>
+        <div class="price">5000</div>
+        <input type="checkbox" name="" id="ch2">
+        <label for="ch2"></label>
+
+        <div class="description">Постер. Африканская женщина</div>
+
+        <form>
+          <button>В корзину</button>
+          <a href="">Купить в один клик</a>
+        </form>
+      </div>
+
+      <div class="product">
+        <img src="assets/main/p-3.svg" alt="product">
+        <span class="p-top">Топ</span>
+        <div class="price">5000</div>
+        <input type="checkbox" name="" id="ch3">
+        <label for="ch3"></label>
 
 
-		<div class="features">
-			<h2>Делаем дома уютнее, а людей счастливее</h2>
-			<div class="desc">Ну, и немного о наших преимуществах, с заботой о Вас...</div>
-			<div class="features-show">
-				<div class="feature">
-					<img src="assets/main/f-0.svg">
-					<span class="desc">Оформление <br>в раму онлайн</span>
-				</div>
-				<div class="feature">
-					<img src="assets/main/f-1.svg">
-					<span class="desc">Индивидуальный<br>подход к клиенту</span>
-				</div>
-				<div class="feature">
-					<img src="assets/main/f-2.svg">
-					<span class="desc">Изготовление<br>1-3 дня</span>
-				</div>
-				<div class="feature">
-					<img src="assets/main/f-3.svg">
-					<span class="desc">Доставка по<br>всей России</span>
-				</div>
-				<div class="feature">
-					<img src="assets/main/f-4.svg">
-					<span class="desc">Более 20 000<br>изображений</span>
-				</div>
-			</div>
-		</div>
+        <div class="description">Постер. Цветы</div>
 
-		<div class="main-catalog">
-			<h2>Каталог</h2>
-			<div class="content">
-				<div class="posters">
-					<img src="assets/main/c-0.svg">
-					<span class="desc">Постеры</span>
-				</div>
-				<div class="module-pic">
-					<img src="assets/main/c-1.svg">
-					<span class="desc">Модульные картины</span>
-				</div>
-				<div class="tapestries">
-					<img src="assets/main/c-2.svg">
-					<span class="desc">Гобелены</span>
-				</div>
-				<div class="baguettes">
-					<img src="assets/main/c-3.svg">
-					<span class="desc">Багеты</span>
-				</div>
+        <form>
+          <button>В корзину</button>
+          <a href="">Купить в один клик</a>
+        </form>
+      </div>
 
-			</div>
-		</div>
+      <div class="product">
+        <img src="assets/main/p-4.svg" alt="product">
+        <span class="p-top">Топ</span>
+        <div class="price">5000</div>
+        <input type="checkbox" name="" id="ch4">
+        <label for="ch4"></label>
 
-		<div class="top">
-			<h2>ТОП продаж</h2>
-			<div class="desc">Популярные коллекции товаров за последнее время</div>
+        <div class="description">Гобелен. Древняя карта мира</div>
 
-			<div class="content">
+        <form>
+          <button>В корзину</button>
+          <a href="">Купить в один клик</a>
+        </form>
+      </div>
+    </div>
+    <div class="content content-mobile">
+      <div class="features-show mobile-features-show">
+        <div class="swiper-container feature-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product">
+                <img src="assets/main/p-0.svg" alt="car">
+                <span class="p-top">Топ</span>
+                <div class="price">5000</div>
+                <input type="checkbox" name="" id="ch0-m">
+                <label for="ch0-m"></label>
 
-				<div class="product">
-					<img src="assets/main/p-0.svg">
-					<span class="p-top">Топ</span>
-					<div class="price">5000</div>
-					<input type="checkbox" name="" id="ch0">
-					<label for="ch0"></label>
+                <div class="description">Модульная картина. Желтая любовь</div>
+                <form>
+                  <button>В корзину</button>
+                  <a href="">Купить в один клик</a>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product">
+                <img src="assets/main/p-1.svg" alt="some-text">
+                <span class="p-top">Топ</span>
+                <div class="price">5000</div>
+                <input type="checkbox" name="" id="ch1-m">
+                <label for="ch1-m"></label>
 
-					<div class="description">Модульная картина. Желтая любовь</div>
-					<form>
-						<button>В корзину</button>
-						<a href="">Купить в один клик</a>
-					</form>
-				</div>
+                <div class="description">Постер. Правила девочки</div>
+                <form>
+                  <button>В корзину</button>
+                  <a href="">Купить в один клик</a>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">3
+              <div class="product">
+                <img src="assets/main/p-2.svg" alt="product">
+                <span class="p-top">Топ</span>
+                <div class="price">5000</div>
+                <input type="checkbox" name="" id="ch2-m">
+                <label for="ch2-m"></label>
 
+                <div class="description">Постер. Африканская женщина</div>
 
-				<div class="product">
-					<img src="assets/main/p-1.svg">
-					<span class="p-top">Топ</span>
-					<div class="price">5000</div>
-					<input type="checkbox" name="" id="ch1">	
-					<label for="ch1"></label>
-
-					<div class="description">Постер. Правила девочки</div>
-					<form>
-						<button>В корзину</button>
-						<a href="">Купить в один клик</a>
-					</form>
-				</div>
+                <form>
+                  <button>В корзину</button>
+                  <a href="">Купить в один клик</a>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">4
+              <div class="product">
+                <img src="assets/main/p-3.svg" alt="product">
+                <span class="p-top">Топ</span>
+                <div class="price">5000</div>
+                <input type="checkbox" name="" id="ch3-m">
+                <label for="ch3-m"></label>
 
 
-				<div class="product">
-					<img src="assets/main/p-2.svg">
-					<span class="p-top">Топ</span>
-					<div class="price">5000</div>
-					<input type="checkbox" name="" id="ch2">	
-					<label for="ch2"></label>
+                <div class="description">Постер. Цветы</div>
 
-					<div class="description">Постер. Африканская женщина</div>
+                <form>
+                  <button>В корзину</button>
+                  <a href="">Купить в один клик</a>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product">
+                <img src="assets/main/p-4.svg" alt="product">
+                <span class="p-top">Топ</span>
+                <div class="price">5000</div>
+                <input type="checkbox" name="" id="ch4-m">
+                <label for="ch4-m"></label>
 
-					<form>
-						<button>В корзину</button>
-						<a href="">Купить в один клик</a>
-					</form>
-				</div>
+                <div class="description">Гобелен. Древняя карта мира</div>
+
+                <form>
+                  <button>В корзину</button>
+                  <a href="">Купить в один клик</a>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div> <!--.swiper-container.feature-slider-->
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          let swiper_top = new Swiper('.swiper-container', {
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+              renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + '</span>';
+              },
+            },
+          });
+        </script>
+      </div> <!--.mobile-features-show-->
+    </div>
+  </div> <!--.top-->
+
+  <div class="feedback">
+    <h2>Отзывы клиентов</h2>
+    <div class="all-feedback">
+      <div>Все</div>
+      <img src="assets/main/arrow-pink.svg"></div>
+    <div class="feedback-block">
+      <div class="write write-pc">
+        <div class="desc">
+          Что говорят покупатели о нашей продукции?
+        </div>
+        <button>оставить отзыв</button>
+      </div>
+      <div class="swiper-container feedback-slider-container">
+        <div class="swiper-wrapper feedback-slider-wrapper">
+          <div class="swiper-slide">
+            <div class="content">
+              <div class="feed">
+                <div class="content">
+                  <img src="assets/main/user.svg" alt="message">
+                  <p class="text">
+                    Очень довольна покупкой! Выгодно покупать в этом магазине.
+                    И не только потому, что цена на подобный товар ниже, чем у
+                    в подобных интернет-магазинах, но и потому, что все мои
+                    пожелания учтены и к тому же все просто высшего качества!!!
+                  </p>
+                  <div class="person">
+                    <div class="name">Ольга Константинова</div>
+                    <div class="city">Красноярск</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content">
+              <div class="feed">
+                <div class="content">
+                  <img src="assets/main/user.svg" alt="message">
+                  <p class="text">
+                    Очень довольна покупкой! Выгодно покупать в этом магазине.
+                    И не только потому, что цена на подобный товар ниже, чем у
+                    в подобных интернет-магазинах, но и потому, что все мои
+                    пожелания учтены и к тому же все просто высшего качества!!!
+                  </p>
+                  <div class="person">
+                    <div class="name">Ольга Константинова</div>
+                    <div class="city">Красноярск</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content">
+              <div class="feed">
+                <div class="content">
+                  <img src="assets/main/user.svg" alt="message">
+                  <p class="text">
+                    Очень довольна покупкой! Выгодно покупать в этом магазине.
+                    И не только потому, что цена на подобный товар ниже, чем у
+                    в подобных интернет-магазинах, но и потому, что все мои
+                    пожелания учтены и к тому же все просто высшего качества!!!
+                  </p>
+                  <div class="person">
+                    <div class="name">Ольга Константинова</div>
+                    <div class="city">Красноярск</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content">
+              <div class="feed">
+                <div class="content">
+                  <img src="assets/main/user.svg" alt="message">
+                  <p class="text">
+                    Очень довольна покупкой! Выгодно покупать в этом магазине.
+                    И не только потому, что цена на подобный товар ниже, чем у
+                    в подобных интернет-магазинах, но и потому, что все мои
+                    пожелания учтены и к тому же все просто высшего качества!!!
+                  </p>
+                  <div class="person">
+                    <div class="name">Ольга Константинова</div>
+                    <div class="city">Красноярск</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content">
+              <div class="feed">
+                <div class="content">
+                  <img src="assets/main/user.svg" alt="message">
+                  <p class="text">
+                    Очень довольна покупкой! Выгодно покупать в этом магазине.
+                    И не только потому, что цена на подобный товар ниже, чем у
+                    в подобных интернет-магазинах, но и потому, что все мои
+                    пожелания учтены и к тому же все просто высшего качества!!!
+                  </p>
+                  <div class="person">
+                    <div class="name">Ольга Константинова</div>
+                    <div class="city">Красноярск</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination feedback-slider-pagination"></div>
+      </div>
+      <div class="write write-mobile">
+        <div class="desc">
+          Что говорят покупатели о нашей продукции?
+        </div>
+        <button>оставить отзыв</button>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      let swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + '</span>';
+          },
+        },
+      });
+    </script>
+  </div> <!--.feedback-->
+
+  <div class="about">
+    <h2>О компании</h2>
+    <img src="assets/main/director.svg" alt="picture">
+    <div class="content">
+      <p>Мы рады приветствовать Вас в интернет-магазине «АРТ НОМЕ»! На сайте представлены: картины, постеры и гобелены с
+        возможностью оформления в багет. Наша продукция поможет в создании атмосферы в любом помещении будь-то уютная
+        гостиная в доме или головной офис в центре мегаполиса. Богатый ассортимент и различные варианты исполнения
+        заказа позволят разгуляться Вашей фантазии, а если вдруг возникнут
+        сложности компетентные менеджеры подскажут лучшие решения.
+      </p>
+      <div class="name">Константин Константинов</div>
+      <div class="post">Генеральный директор компании «Арт HOME»</div>
+    </div>
+
+  </div> <!--.about-->
+</main>
 
 
-				<div class="product">
-					<img src="assets/main/p-3.svg">
-					<span class="p-top">Топ</span>
-					<div class="price">5000</div>
-					<input type="checkbox" name="" id="ch3">	
-					<label for="ch3"></label>
+<footer>
+  <div class="soc">
+    <h3>Мы в социальных сетях:</h3>
+    <span><img src="assets/footer/inst.svg" alt="instagram"></span>
+    <span><img src="assets/footer/vk.svg" alt="vk"></span>
+  </div> <!--.soc-->
 
+  <div class="mailing">
+    <h3> Получать уведомления о новых коллекциях</h3>
+    <form>
+      <label><input type="text" name="mail" placeholder="E-mail"></label>
+      <button class="send">Отправить</button>
+    </form>
+  </div> <!--.mailing-->
 
-					<div class="description">Постер. Цветы</div>
+  <div class="pay-methods">
+    <h3>Способы оплаты:</h3>
+    <img src="assets/footer/pay-methods.svg" alt="pay-methods">
+  </div> <!--.pay-methods-->
 
-					<form>
-						<button>В корзину</button>
-						<a href="">Купить в один клик</a>
-					</form>
-				</div>
+  <div class="market-place">
+    <h3>Мы на маркетпэйс:</h3>
+    <span><img src="assets/footer/wb.svg" alt="wildberries"></span>
+    <span><img src="assets/footer/ozon.svg" alt="ozon"></span>
+    <span><img src="assets/footer/ali.svg" alt="aliexpress"></span>
+  </div> <!--.market-place-->
 
+  <div class="logo"><img src="assets/logo.svg" alt="logo"></div> <!--.logo-->
 
-				<div class="product">
-					<img src="assets/main/p-4.svg">
-					<span class="p-top">Топ</span>
-					<div class="price">5000</div>
-					<input type="checkbox" name="" id="ch4">	
-					<label for="ch4"></label>
+  <div class="our-products">
+    <h3>Наши продукты</h3>
+    <ul>
+      <li>Постеры</li>
+      <li>Модульные картины</li>
+      <li>Гобелены</li>
+      <li>Багеты</li>
+    </ul>
+  </div> <!--.our-products-->
 
-					<div class="description">Гобелен. Древняя карта мира</div>
+  <div class="info">
+    <h3>Информация</h3>
+    <ul>
+      <li>Доставка и оплата</li>
+      <li>Как заказать</li>
+      <li>Полезные статьи</li>
+    </ul>
+  </div> <!--.info-->
 
-					<form>
-						<button>В корзину</button>
-						<a href="">Купить в один клик</a>
-					</form>
-				</div>
-			</div>
-		</div>
+  <div class="company">
+    <h3>Компания</h3>
+    <ul>
+      <li>О нас</li>
+      <li>Контакты</li>
+      <li>Мы работаем Пн-Пт 10-18</li>
+    </ul>
+  </div> <!--.company-->
 
-		<div class="feedback">
-			<h2>Отзывы клиентов</h2>
-			<div class="content">
-				<div class="write">
-					<div class="desc">
-						Что говорят покупатели о нашей продукции?
-					</div>
-					<button>оставить отзыв</button>
-				</div>
-				<div class="feed">
-					<div class="content">
+  <div class="callback">
+    <span><a href="tel:+79215743735">+7 (921) 574-37-35 </a></span>
+    <span><a href="tel:88003333735">8 800 333-37-35</a></span>
+    <button>Заказать звонок</button>
+  </div> <!--.callback-->
 
-						<img src="assets/main/user.svg">
-						<p>Очень довольна покупкой! Выгодно покупать в этом магазине.
-							И не только потому, что цена на подобный товар ниже, чем у
-							в подобных интернет-магазинах, но и потому, что все мои 
-							пожелания учтены и к тому же все просто высшего качества!!!
-						</p>
-						<div class="person">
-							<div class="name">Ольга Константинова</div>
-							<div class="city">Красноярск</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="about">
-			<h2>О компании</h2>
-			<img src="assets/main/director.svg">
-			<div class="content">
-				<p>Мы рады приветствовать Вас в интернет-магазине «АРТ НОМЕ»! На сайте представлены: картины, постеры и гобелены с возможностью оформления в багет. Наша продукция поможет в создании атмосферы в любом помещении будь-то уютная гостиная в доме или головной офис в центре мегаполиса. Богатый ассортимент и различные варианты исполнения заказа позволят разгуляться Вашей фантазии, а если вдруг возникнут 
-				сложности компетентные менеджеры подскажут лучшие решения.
-				</p>
-				<div class="name">Константин Константинов</div>
-				<div class="post">Генеральный директор компании «Арт HOME»</div>
-			</div>
-
-		</div>
-
-	</main>
-
-
-
-
-	<footer>
-		<div class="soc">
-			<h3>Мы в социальных сетях:</h3>
-			<span><img src="assets/footer/inst.svg"></span>
-			<span><img src="assets/footer/vk.svg"></span>
-		</div>
-
-		<div class="mailing">
-			<h3> Получать уведомления о новых коллекциях</h3>
-			<form>
-				<input type="text" name="mail" placeholder="E-mail">
-				<button class="send">Отправить</button>
-			</form>
-		</div>
-
-		<div class="pay-methods">
-			<h3>Способы оплаты:</h3>
-			<img src="assets/footer/pay-methods.svg">
-		</div>
-
-		<div class="market-place">
-			<h3>Мы на маркетпэйс:</h3>
-			<span><img src="assets/footer/wb.svg"></span>
-			<span><img src="assets/footer/ozon.svg"></span>
-			<span><img src="assets/footer/ali.svg"></span>
-		</div>
-
-		<div class="logo"><img src="assets/logo.svg"></div>
-
-		<div class="our-products">
-			<h3>Наши продукты</h3>
-			<ul>
-				<li>Постеры</li>
-				<li>Модульные картины</li>
-				<li>Гобелены</li>
-				<li>Багеты</li>
-			</ul>
-		</div>
-
-		<div class="info">
-			<h3>Информация</h3>
-			<ul>
-				<li>Доставка и оплата</li>
-				<li>Как заказать</li>
-				<li>Полезные статьи</li>
-			</ul>
-		</div>
-
-	
-		<div class="company">
-			<h3>Компания</h3>
-			<ul>
-				<li>О нас</li>
-				<li>Контакты</li>
-				<li>Мы работаем Пн-Пт 10-18</li>
-			</ul>
-		</div>		
-
-		<div class="callback">
-			<li><a href="tel:+79215743735">+7 (921) 574-37-35 </a></li>
-			<li><a href="tel:88003333735">8 800 333-37-35</a></li>
-			<button>Заказать звонок</button>
-		</div>
-
-		<span class="bruh">© 2020 ART HOME - искусство в Вашем доме. Все права защищены.</span>
-	</footer>
+  <span class="bruh">© 2020 ART HOME - искусство в Вашем доме. Все права защищены.</span>
+</footer>
 </body>
 </html>
