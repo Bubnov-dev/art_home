@@ -266,7 +266,14 @@ button {
 }
 
 @media (max-width: 700px) {
-  .main-desc {
+  .main-desc, form {
     display: block;
   }
+  form button{
+  	height: 2rem;
+  }
+  form > *{
+  	margin-top:1rem;
+  }
+
 }

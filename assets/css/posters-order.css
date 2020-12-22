@@ -1,5 +1,6 @@
 main {
   color: #343434;
+  overflow-x: hidden;
 }
 
 .field {
@@ -465,6 +466,7 @@ div.map {
     display: block;
     padding: 1%;
     width: 90%;
+
   }
 
   main > * {
@@ -473,6 +475,10 @@ div.map {
 
   .no-such-city form {
     width: 95%;
+  }
+
+  #comment{
+    width:95%;
   }
 }
 

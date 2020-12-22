@@ -56,6 +56,9 @@
 		grid-row: 2/3;
 		grid-column: 5/6;	
 	}
+	footer .callback >span{
+		display:block;
+	}
 
 	footer .bruh{
 		grid-row: 3/4;

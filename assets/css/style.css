@@ -4,7 +4,7 @@ html{
 	font-family: Roboto, monospace;
 	color: #707070;
 	overflow-x: hidden;
-	
+
 }
 
 li{
@@ -32,5 +32,8 @@ h2, h3{
 @media(max-height: 700px){
 	main{
 		padding: 0 !important;
+	}
+	body{
+		overflow-x: hidden;
 	}
 }

@@ -22,7 +22,6 @@ h2, h3{
 	.posters-mobile .category-items .item img {
 		filter: brightness(0.5);
 		object-fit: cover;
-		object-position: 0 -10rem;
 		height: 14em;
 	}
 
@@ -38,7 +37,7 @@ h2, h3{
 		padding: 1em;
 		color: white !important;
 		position: absolute;
-		margin-top: -27%;
+		margin-top: -10rem;
 	}
 
 	h3{
